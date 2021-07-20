@@ -1,0 +1,16 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+    long num =get_long("Number: "); 
+    int length=4;
+    int ns[length];
+    for(i=0, i<length, i++)
+    {
+      ns[i]=num;
+      printf("%i\n", ns[i]);
+    }
+    
+}
