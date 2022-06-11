@@ -1,0 +1,52 @@
+﻿<Window x:Class="Kursova.Zvit1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursova"
+        mc:Ignorable="d"
+        Title="Звіт 1" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/113237668.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="181" Margin="45,66,0,0" VerticalAlignment="Top" Width="176" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Height="181" Margin="253,66,0,0" VerticalAlignment="Top" Width="170" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Label x:Name="ndv" Content="Виконавці:" HorizontalAlignment="Left" Height="40" Margin="45,26,0,0" VerticalAlignment="Top" Width="176" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF0022FF"/>
+        <Label Content="Пісні:" HorizontalAlignment="Left" Height="40" Margin="247,26,0,0" VerticalAlignment="Top" Width="176" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF0038F7"/>
+        <Label Content="Звіт 1" HorizontalAlignment="Left" Height="70" Margin="575,22,0,0" VerticalAlignment="Top" Width="197" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontFamily="Bodoni MT Black"/>
+        <Label Content="   Введіть назву гурту, щоб &#xD;&#xA;знайти її склад та репертуар:" HorizontalAlignment="Left" Height="82" Margin="460,72,0,0" VerticalAlignment="Top" Width="240" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="Group" HorizontalAlignment="Left" Height="43" Margin="468,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Foreground="White" BorderBrush="White" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="Filter1" Content="Застосувати фільтр" HorizontalAlignment="Left" Height="50" Margin="468,212,0,0" VerticalAlignment="Top" Width="232" BorderBrush="#FFFEFEFE" Foreground="White" FontSize="16" Click="Filter1_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Label Content="Введіть ім'я та фамілію автора чи співавтора &#xD;&#xA;        пісні, щоб дізнатись його репертуар:" HorizontalAlignment="Left" Height="60" Margin="45,252,0,0" VerticalAlignment="Top" Width="378" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White"/>
+        <TextBox x:Name="Author" HorizontalAlignment="Left" Height="43" Margin="118,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Foreground="White" BorderBrush="White" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="Filter2" Content="Застосувати фільтр" HorizontalAlignment="Left" Height="44" Margin="118,365,0,0" VerticalAlignment="Top" Width="232" BorderBrush="#FFFEFEFE" Foreground="White" FontSize="16" Click="Filter2_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Cancel" Content="Скинути фільтр" HorizontalAlignment="Left" Height="43" Margin="468,317,0,0" VerticalAlignment="Top" Width="232" BorderBrush="#FFFEFEFE" Foreground="#FF0022FF" FontSize="16" Click="Cancel_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Main" Content="Головне меню" HorizontalAlignment="Left" Height="43" Margin="468,365,0,0" VerticalAlignment="Top" Width="232" BorderBrush="#FFFEFEFE" Foreground="#FF0022FF" FontSize="16" Click="Main_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

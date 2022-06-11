@@ -1,0 +1,45 @@
+﻿<Window x:Class="Kursova.AddGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursova"
+        mc:Ignorable="d"
+        Title="Нові зірки" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/1616608017_53-p-fon-dlya-prezentatsii-zvezdi-57.jpg"/>
+        </Grid.Background>
+        <Button x:Name="GoToMain" Content="Головне вікно" HorizontalAlignment="Left" Height="56" Margin="574,340,0,0" VerticalAlignment="Top" Width="176" FontSize="18" FontFamily="Segoe UI Black" BorderBrush="#FFFFFBFB" Foreground="#FFFFFBFB" Click="GoToMain_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="AddGroup1" Content="Додати гурт" HorizontalAlignment="Left" Height="56" Margin="50,340,0,0" VerticalAlignment="Top" Width="176" FontSize="18" FontFamily="Segoe UI Black" BorderBrush="#FFFFFBFB" Foreground="#FFFFFBFB" Click="AddGroup1_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Label Content="Введіть назву гурту:" HorizontalAlignment="Left" Height="38" Margin="390,73,0,0" VerticalAlignment="Top" Width="354" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <Label Content="Введіть рік заснування:" HorizontalAlignment="Left" Height="38" Margin="356,152,0,0" VerticalAlignment="Top" Width="422" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <Label Content="Введіть країну походження:" HorizontalAlignment="Left" Height="38" Margin="327,233,0,0" VerticalAlignment="Top" Width="480" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="GroupName" HorizontalAlignment="Left" Height="35" Margin="374,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="386" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="Year" HorizontalAlignment="Left" Height="35" Margin="473,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="Country" HorizontalAlignment="Left" Height="35" Margin="384,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="Нові зірки" HorizontalAlignment="Center" Height="52" Margin="0,10,0,0" VerticalAlignment="Top" Width="264" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="233" Margin="28,73,0,0" VerticalAlignment="Top" Width="323" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+    </Grid>
+</Window>

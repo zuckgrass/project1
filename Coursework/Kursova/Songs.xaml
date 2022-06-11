@@ -1,0 +1,61 @@
+﻿<Window x:Class="Kursova.Songs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kursova"
+        mc:Ignorable="d"
+        Title="Songs" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/maxresdefault-3.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="125" Margin="10,272,0,0" VerticalAlignment="Top" Width="427" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <DataGrid.Background>
+                <ImageBrush ImageSource="/maxresdefault-3.jpg"/>
+            </DataGrid.Background>
+        </DataGrid>
+        <Button x:Name="Button" Content="До головної" HorizontalAlignment="Left" Height="65" Margin="476,332,0,0" VerticalAlignment="Top" Width="264" FontSize="18" FontFamily="Segoe UI Black" Click="Button_Click" Foreground="White" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lmem" Content="" HorizontalAlignment="Left" Height="49" Margin="19,57,0,0" VerticalAlignment="Top" Width="390" FontSize="18" FontFamily="Times New Roman" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="#FFF4F4F4"/>
+        <Label Content="Введіть назву пісні:" HorizontalAlignment="Left" Height="34" Margin="462,20,0,0" VerticalAlignment="Top" Width="292" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <Label Content="Введіть композитора:" HorizontalAlignment="Left" Height="35" Margin="433,92,0,0" VerticalAlignment="Top" Width="349" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <Label Content="Введіть автора слів:" HorizontalAlignment="Left" Height="35" Margin="410,167,0,0" VerticalAlignment="Top" Width="396" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="SongName" HorizontalAlignment="Left" Height="31" Margin="449,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="Composer" HorizontalAlignment="Left" Height="35" Margin="462,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="SongWriter" HorizontalAlignment="Left" Height="31" Margin="456,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="303" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="Введіть дату релізу:" HorizontalAlignment="Left" Height="35" Margin="410,237,0,0" VerticalAlignment="Top" Width="396" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="Segoe UI Black" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="Realise" HorizontalAlignment="Left" Height="31" Margin="493,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Foreground="#FFFFFBFB" FontFamily="Segoe UI Black" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="Add" Content="Додати пісню" HorizontalAlignment="Left" Height="42" Margin="29,12,0,0" VerticalAlignment="Top" Width="176" FontSize="18" FontFamily="Segoe UI Black" Foreground="White" BorderBrush="White" Click="Add_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Delete" Content="Видалити пісню" HorizontalAlignment="Left" Height="42" Margin="225,12,0,0" VerticalAlignment="Top" Width="175" FontSize="18" FontFamily="Segoe UI Black" Foreground="White" BorderBrush="White" Click="Delete_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="151" Margin="19,111,0,0" VerticalAlignment="Top" Width="410"/>
+
+    </Grid>
+</Window>
