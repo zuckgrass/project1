@@ -1,0 +1,15 @@
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.AssemblyInfoInputs.cache
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.AssemblyInfo.cs
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.csproj.CoreCompileInputs.cache
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ASD7.exe
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ASD7.deps.json
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ASD7.runtimeconfig.json
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ASD7.dll
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ref\ASD7.dll
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\bin\Debug\net6.0\ASD7.pdb
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.dll
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ref\ASD7.dll
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.pdb
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.genruntimeconfig.cache
+C:\Users\38099\Desktop\Роботи\Основи програмування\Prac 3\ASD7\ASD7\obj\Debug\net6.0\ASD7.csproj.AssemblyReference.cache
