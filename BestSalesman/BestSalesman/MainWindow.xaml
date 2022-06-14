@@ -1,0 +1,77 @@
+﻿<Window x:Name = "MainWin" x:Class ="BestSalesman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BestSalesman"
+        mc:Ignorable="d"
+        Title="Пошук найкоротшого шляху. Пісоцька, КП-11, 2022."
+
+            Height="450" Width="800" ResizeMode="NoResize"
+            FontFamily="Georgia" FontSize="16" Foreground="#00000000">
+    <Grid x:Name="MyGrid" ShowGridLines="True" Margin="0,0,0,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="39*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Row="0" Grid.Column="0" x:Name="MyCanvas"
+                HorizontalAlignment="Left" Margin="10,10,0,0"
+                VerticalAlignment="Top" Height="0" Width="0"/>
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Кількість пунктів" Grid.Row="0"
+                BorderThickness="1" BorderBrush="Black"
+                FontFamily="Book Antiqua" FontSize="16" Grid.ColumnSpan="2" ></Label>
+            <ComboBox x:Name="NumElemCB" SelectedIndex="0"
+                SelectionChanged="NumElemCB_SelectionChanged"
+                FontFamily="Book Antiqua" FontSize="16" Grid.ColumnSpan="2" Margin="0,31,0,0" Grid.RowSpan="2">
+                <ListBoxItem Content="5" />
+                <ListBoxItem Content="10"/>
+                <ListBoxItem Content="20"/>
+                <ListBoxItem Content="50"/>
+                <ListBoxItem Content="100"/>
+                <ListBoxItem Content="200"/>
+                <ListBoxItem Content="500"/>
+            </ComboBox>
+            <Label Content="Швидкість, у мс" Grid.Row="1"
+                BorderThickness="1" BorderBrush="Black"
+                FontFamily="Book Antiqua" FontSize="16" Grid.ColumnSpan="2" Margin="0,31,0,0" Grid.RowSpan="2"></Label>
+            <ComboBox x:Name="VelCB" Grid.Row="2" SelectedIndex="0"
+
+                SelectionChanged="VelCB_SelectionChanged"
+                FontFamily="Book Antiqua" FontSize="16" Grid.ColumnSpan="2" Margin="0,31,0,0" Grid.RowSpan="2">
+
+                <ListBoxItem Content="1000" />
+                <ListBoxItem Content="500"/>
+                <ListBoxItem Content="200"/>
+                <ListBoxItem Content="100"/>
+                <ListBoxItem Content="50"/>
+                <ListBoxItem Content="10"/>
+                <ListBoxItem Content="5"/>
+                <ListBoxItem Content="1"/>
+            </ComboBox>
+            <Button x:Name="StopStart" Content="Запустити / Зупинити"
+            Grid.Row="5" Click="StopStart_Click" FontFamily="Book
+            Antiqua" FontSize="16" Grid.ColumnSpan="2" Margin="0,219,0,0"/>
+            <Label x:Name="Ni" Grid.Column="1" Content="Номер ітерації: " HorizontalAlignment="Center" Height="75" Margin="0,173,0,0" Grid.Row="5" VerticalAlignment="Top" Width="195" FontFamily="Book Antiqua"/>
+        </Grid>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Center" Height="35" Margin="0,157,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="198" FontFamily="Book Antiqua" Grid.Column="2" BorderBrush="#FF151618" DataContextChanged="TextBox1_DataContextChanged"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Center" Height="34" Margin="0,225,0,0" TextWrapping="Wrap" Text="0.5" VerticalAlignment="Top" Width="198" FontFamily="Book Antiqua" Grid.Column="2" BorderBrush="#FF191B20" DataContextChanged="TextBox2_DataContextChanged"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Center" Height="34" Margin="0,293,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" Width="198" FontFamily="Book Antiqua" Grid.Column="2" BorderBrush="#FF141721" DataContextChanged="TextBox3_DataContextChanged"/>
+        <Label Grid.Column="2" Content="Розмірність популяцій" HorizontalAlignment="Center" Height="32" VerticalAlignment="Top" Width="198" FontSize="14" FontFamily="Book Antiqua" BorderBrush="#FF1D1B1B" Margin="0,125,0,0"/>
+        <Label Grid.Column="2" Content="Ймовірність мутації" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top" Width="198" FontSize="14" FontFamily="Book Antiqua" BorderBrush="#FF1D1B1B" Margin="0,192,0,0"/>
+        <Label Grid.Column="2" Content="Кількість ітерацій" HorizontalAlignment="Center" Height="34" VerticalAlignment="Top" Width="198" FontSize="14" FontFamily="Book Antiqua" BorderBrush="#FF1D1B1B" Margin="0,259,0,0" OpacityMask="Black"/>
+    </Grid>
+</Window>
